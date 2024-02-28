@@ -30,24 +30,25 @@ Skin cancer can appear in a lot of different ways. There is no one way to descri
 ## Types of skin cancer
 ### Basal cell carcinoma (BCC)
 It usually (but not only) appears in areas with high sun exposure - on the neck, face, ears, arms or legs. Some pf the BCC sympotms are:
-a reoccuring, not-healing or bleading sore
-a patch on the skin that is rough, flat, or that looks like a scar
-waxy or pearly bump on the skin
+
+* a reoccuring, not-healing or bleading sore
+* a patch on the skin that is rough, flat, or that looks like a scar
+* waxy or pearly bump on the skin
 
 ### Squamous cell carcinoma (SCC)
 Similarly to BCC also usually appears in areas of high sun exposure. In some cases, especially the case for people with darker skin tones, it can also appear in different areas. Signs of SCC include:
 
-skin lesion that are itchy or painful
-a red or solid nodule
-lesion with irregular borders that are crusty or scaly
+* skin lesion that are itchy or painful
+* a red or solid nodule
+* lesion with irregular borders that are crusty or scaly
 
 
 ### Melanoma (MEL) 
 This type of cancer can appear anywhere on the body. It can develop out of some already existing moles. For  people with darker skin tones, MEL usually occurs on the soles or palms of their feet. Some of the symptoms may include:
 
-appearance of dark lesions on the fingers and toes or the mucous membranes, like mouth, anus or vagina
-changes in the appearance of a mole
-growth of a brown, large spot, which often has irregular edges
+* appearance of dark lesions on the fingers and toes or the mucous membranes, like mouth, anus or vagina
+* changes in the appearance of a mole
+* growth of a brown, large spot, which often has irregular edges
 
 ### Basal Cell Carcinoma (BCC):
         Appearance: Often appears as a pearly or waxy bump, sometimes with visible blood vessels.
