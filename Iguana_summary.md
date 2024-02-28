@@ -16,7 +16,7 @@ This metadata could potentially be used alongside our masks and annotations to s
 
 
 ## Skin lesions
-Our data set contains a total of 7 different skin lesions, abbreviated as BCC, SCC, ACK, SEK, BOD, MEL and NEV, whereas BOD and SCC are combined as SCC. 
+Our data set contains a total of 7 different skin lesions, abbreviated as BCC, SCC, ACK, SEK, BOD, MEL and NEV, whereas BOD and SCC are combined as SCC in the dataset. 
 
 ### Basal Cell Carcinoma (BCC):
         Appearance: Often appears as a pearly or waxy bump, sometimes with visible blood vessels.
