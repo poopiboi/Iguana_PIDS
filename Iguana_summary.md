@@ -18,6 +18,15 @@ This metadata could potentially be used alongside our masks and annotations to s
 ## Skin lesions
 Our data set contains a total of 7 different skin lesions, abbreviated as BCC, SCC, ACK, SEK, BOD, MEL and NEV. 
 
+## Data collection 
+Since the dataset is compiled using smartphone cameras, it inherently provides less detailed images of skin lesions compared to dermoscopic images. Moreover, factors like camera resolution and lighting conditions further impact image quality. The dataset has already been filtered by the creators based on certain criteria during the quality selection process. This includes eliminating images with very poor resolution where lesions are unidentifiable, instances where patients could be identified (e.g., due to tattoos), and cases where lesions are entirely obscured by hair or ink markings.
+
+However, during our process of creating masks, we encountered additional low-quality images, which we omitted. Furthermore, some pictures lacked sufficient clarity for us to accurately pinpoint the location of the lesion, leading us to skip those images as well.
+
+
+
+
+
 
 
 ## 
