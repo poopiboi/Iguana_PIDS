@@ -14,9 +14,40 @@ All the samples diagnosed as skin cancer are proved by biopsy.
 As part of the data set, a metadata .csv-file was provided. This metadata has information on the patient in each picture, with a range of additional factors, such as previous cancer history, access to water, the diameter of the lesion and a number of True/False statements regarding the lesion(Does it hurt, does it bleed, etc.)
 This metadata could potentially be used alongside our masks and annotations to see if results in image recognition could match certain parameters.
 
-
 ## Skin lesions
-Our data set contains a total of 7 different skin lesions, abbreviated as BCC, SCC, ACK, SEK, BOD, MEL and NEV, whereas BOD and SCC are combined as SCC in the dataset. 
+Skin cancer is one of the most common types of cancer in the world and it occurs when skin cells are damaged, for example, by overexposure to ultraviolet radiation from the sun. The World Health Organization stated that one in every three cases where a person is diagnosed with cancer, it is a skin cancer. Over the past few decades, in countries like Australia, Canada or USA, the number of people diagnosed with skin cancer has been increasing at a constant rate. Over the past few years, different approaches have been proposed to deal with automated skin cancer detection.
+
+Skin cancer can appear in a lot of different ways. There is no one way to describe how a skin cancer looks, because the symptoms can vary greatly. Some of them may include:
+
+* itchy or painful spot
+* sore that bleeds or develops a crust and is not healing 
+* spot that you can feel that is scaly or red rough
+* shiny bump on the top of the skin that is red or has the color of the skin 
+* changes in the size, shape or color of an existing spot or a new spot on the skin
+* change that looks like a scar without a well-defined border or a change that looks like a wart
+* growth with a raised border and bleeding or central crust
+
+## Types of skin cancer
+# Basal cell carcinoma (BCC)
+It usually (but not only) appears in areas with high sun exposure - on the neck, face, ears, arms or legs. Some pf the BCC sympotms are:
+a reoccuring, not-healing or bleading sore
+a patch on the skin that is rough, flat, or that looks like a scar
+waxy or pearly bump on the skin
+
+# Squamous cell carcinoma (SCC)
+Similarly to BCC also usually appears in areas of high sun exposure. In some cases, especially the case for people with darker skin tones, it can also appear in different areas. Signs of SCC include:
+
+skin lesion that are itchy or painful
+a red or solid nodule
+lesion with irregular borders that are crusty or scaly
+
+
+## Melanoma (MEL) 
+This type of cancer can appear anywhere on the body. It can develop out of some already existing moles. For  people with darker skin tones, MEL usually occurs on the soles or palms of their feet. Some of the symptoms may include:
+
+appearance of dark lesions on the fingers and toes or the mucous membranes, like mouth, anus or vagina
+changes in the appearance of a mole
+growth of a brown, large spot, which often has irregular edges
 
 ### Basal Cell Carcinoma (BCC):
         Appearance: Often appears as a pearly or waxy bump, sometimes with visible blood vessels.
@@ -60,8 +91,3 @@ A relevant segmentation strategy can be foreground segmentation, that focuses on
 https://www.sciencedirect.com/science/article/pii/S235234092031115X
 https://www.sciencedirect.com/science/article/pii/S0010482519304019?via%3Dihub
 
-
-
-
-
-## 
