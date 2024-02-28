@@ -51,6 +51,11 @@ However, during our process of creating masks, we encountered additional low-qua
 ## Skin canecr
 Skin cancer is one of the most common types of cancer in the world. Over the past few years, different approaches have been proposed to deal with automated skin cancer detection. sun uv impact, 
 
+## Future work
+
+In the future we would like to implement segmentation strategies that can automate the process of annotating images. Ideally, this will be done by combing data knowledge and domain knowledge. Data knowledge is for example used, when measuring homogenous intensity or texture in an image to locate what stands out. While domain knowledge is used to further specify the task at hand. Usually domain knowledge should be discriminative, generalizable, and efficiently computable. 
+A relevant segmentation strategy can be foreground segmentation, that focuses on a single object in an image, that can be used to automate the mask creation process, instead of doing it by hand. The benefits of foreground segmentation are the effectiveness of detecting the relevant lesions in the images. Also, computer-assisted analysis of medical images needs segmentation to function.  
+
 ## References
 https://www.sciencedirect.com/science/article/pii/S235234092031115X
 https://www.sciencedirect.com/science/article/pii/S0010482519304019?via%3Dihub
