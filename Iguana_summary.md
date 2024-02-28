@@ -10,5 +10,14 @@ BCC, MEL and SCC are considered to be skin cancers, whereas ACK, NEV and SEK are
 All the samples diagnosed as skin cancer are proved by biopsy.
 
 
+## Metadata from data set
+As part of the data set, a metadata .csv-file was provided. This metadata has information on the patient in each picture, with a range of additional factors, such as previous cancer history, access to water, the diameter of the lesion and a number of True/False statements regarding the lesion(Does it hurt, does it bleed, etc.)
+This metadata could potentially be used alongside our masks and annotations to see if results in image recognition could match certain parameters.
+
+
+## Skin lesions
+Our data set contains a total of 7 different skin lesions, abbreviated as BCC, SCC, ACK, SEK, BOD, MEL and NEV. 
+
+
 
 ## 
