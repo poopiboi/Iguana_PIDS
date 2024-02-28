@@ -23,7 +23,12 @@ Since the dataset is compiled using smartphone cameras, it inherently provides l
 
 However, during our process of creating masks, we encountered additional low-quality images, which we omitted. Furthermore, some pictures lacked sufficient clarity for us to accurately pinpoint the location of the lesion, leading us to skip those images as well.
 
+## Skin canecr
+Skin cancer is one of the most common types of cancer in the world. Over the past few years, different approaches have been proposed to deal with automated skin cancer detection. sun uv impact, 
 
+## References
+https://www.sciencedirect.com/science/article/pii/S235234092031115X
+https://www.sciencedirect.com/science/article/pii/S0010482519304019?via%3Dihub
 
 
 
