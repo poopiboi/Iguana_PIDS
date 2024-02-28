@@ -16,7 +16,32 @@ This metadata could potentially be used alongside our masks and annotations to s
 
 
 ## Skin lesions
-Our data set contains a total of 7 different skin lesions, abbreviated as BCC, SCC, ACK, SEK, BOD, MEL and NEV. 
+Our data set contains a total of 7 different skin lesions, abbreviated as BCC, SCC, ACK, SEK, BOD, MEL and NEV, whereas BOD and SCC are combined as SCC. 
+
+    Basal Cell Carcinoma (BCC):
+        Appearance: Often appears as a pearly or waxy bump, sometimes with visible blood vessels.
+        Diagnosis: Typically diagnosed through a skin biopsy.
+
+    Melanoma (MEL):
+        Appearance: Usually presents as a new mole or a change in an existing mole. The ABCDE rule (Asymmetry, Border irregularity, Color variation, Diameter larger than a pencil eraser,            Evolution or change) is often used for early detection.
+        Diagnosis: A biopsy is performed to confirm melanoma.
+
+    Squamous Cell Carcinoma (SCC):
+        Appearance: Often appears as a firm, red nodule or a flat sore with a scaly crust.
+        Diagnosis: Confirmed through a skin biopsy.
+
+    Actinic Keratosis (ACK):
+        Characteristics: Actinic keratosis is a precancerous growth on the skin that appears as rough, scaly patches. These patches are usually caused by sun exposure and may vary in color,         such as red, pink, or flesh-toned.
+        Diagnosis: Dermatologists typically diagnose actinic keratosis through a visual examination. In some cases, a biopsy may be performed to confirm the diagnosis.
+
+    Seborrheic Keratosis (SEK):
+        Characteristics: Seborrheic keratosis is a non-cancerous (benign) skin tumor that originates from cells called keratinocytes. It usually appears as waxy, scaly, or crusty growths            that can vary in color, including tan, black, or brown. They have a stuck-on appearance.
+        Diagnosis: Seborrheic keratosis is usually diagnosed based on its appearance during a physical examination. In some cases, a biopsy may be performed to rule out other skin                   conditions.
+
+    Nevus (NEV):
+        Characteristics: Nevus, commonly known as a mole, is a benign growth on the skin. Moles can vary in color, size, and shape. Most moles are harmless, but changes in size, shape, or           color may warrant medical attention.
+        Diagnosis: Diagnosis is typically based on visual examination. If there are concerns about the mole's characteristics, a dermatologist may recommend a biopsy for further evaluation.
+  
 
 ## Data collection 
 Since the dataset is compiled using smartphone cameras, it inherently provides less detailed images of skin lesions compared to dermoscopic images. Moreover, factors like camera resolution and lighting conditions further impact image quality. The dataset has already been filtered by the creators based on certain criteria during the quality selection process. This includes eliminating images with very poor resolution where lesions are unidentifiable, instances where patients could be identified (e.g., due to tattoos), and cases where lesions are entirely obscured by hair or ink markings.
