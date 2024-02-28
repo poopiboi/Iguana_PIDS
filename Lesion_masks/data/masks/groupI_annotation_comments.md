@@ -10,4 +10,5 @@ We exported .json files and using *convert_json_to_image.py* got our masks.
 In general, we had issues figuring out how to properly label a lesion. We lacked the preliminary knowledge to spot them, and more time to go in depth on this subject would have helped us during the annotation process. Even looking at the documentation provided along with the data set, we had issues applying their brief description in our own use.
 
 ### CSV-creation
-Running the 
+Running the *merge_masks.py*, we create a .csv with an overview of the masks and which of the five group members created the annotation.
+The code can be a bit finnicky to get working, but it worked and we are happy!
