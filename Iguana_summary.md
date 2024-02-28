@@ -89,6 +89,7 @@ In the future we would like to implement segmentation strategies that can automa
 A relevant segmentation strategy can be foreground segmentation, that focuses on a single object in an image, that can be used to automate the mask creation process, instead of doing it by hand. The benefits of foreground segmentation are the effectiveness of detecting the relevant lesions in the images. Also, computer-assisted analysis of medical images needs segmentation to function.  
 
 ## References
-https://www.sciencedirect.com/science/article/pii/S235234092031115X
-https://www.sciencedirect.com/science/article/pii/S0010482519304019?via%3Dihub
+* https://www.sciencedirect.com/science/article/pii/S235234092031115X
+* https://www.sciencedirect.com/science/article/pii/S0010482519304019?via%3Dihub
+* https://www.mdanderson.org/cancer-types/skin-cancer/skin-cancer-symptoms.html
 
