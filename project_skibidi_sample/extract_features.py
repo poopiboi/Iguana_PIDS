@@ -15,7 +15,7 @@ from statistics import variance
 
 
 
-def extract_features(image_path, mask_path):
+def extract_features(image_path, mask_path, img_name):
     #image = plt.imread(image_path)
     
     mask = Image.open(mask_path)
@@ -23,17 +23,20 @@ def extract_features(image_path, mask_path):
     rgb_img = plt.imread(image_path)[:,:,:3]
     mask_rgb_img = plt.imread(mask_path)
     img_slic_segments = img_slic_segmentation(rgb_img, mask_rgb_img)
+
+    rgb_img_cv2 = cv2.imread(image_path)
+    mask_rgb_img_cv2 = cv2.imread(mask_path)
     
     
     
     asymmetry = rotation_asymmetry(mask)
     color= check_color(rgb_img, img_slic_segments)
-    #elevation = elevation_check(image_path)
+    blue_white = detect_blue_white_veil(rgb_img_cv2, mask_rgb_img_cv2)
 
-    return [image_path, asymmetry, color, 0]
+    return [img_name, asymmetry, color, blue_white]
 
 
-def img_slic_segmentation(image, mask, segments=25, compactness=10):   
+def img_slic_segmentation(image, mask, segments=100, compactness=10):   
     slic_segment = slic_segment = segmentation.slic(np.array(image),
                 n_segments = segments,
                 compactness = compactness,
@@ -200,4 +203,35 @@ def rgb_var(image, slic_segments):
     blue_var = variance(blue, sum(blue) / n)
 
     return red_var, green_var, blue_var
+
+
+def detect_blue_white_veil(image, mask):
+    # Convert image and mask to HSV color space
+    image_hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+    mask_hsv = cv2.cvtColor(mask, cv2.COLOR_BGR2HSV)
+
+    # Define lower and upper bounds for blue and white colors in HSV
+    lower_blue = np.array([90, 50, 50])
+    upper_blue = np.array([130, 255, 255])
+    lower_white = np.array([0, 0, 200])
+    upper_white = np.array([180, 30, 255])
+
+    # Threshold the HSV images to get only blue and white regions
+    blue_mask = cv2.inRange(image_hsv, lower_blue, upper_blue)
+    white_mask = cv2.inRange(image_hsv, lower_white, upper_white)
+
+    # Bitwise-AND mask and original image
+    blue_region = cv2.bitwise_and(mask, mask, mask=blue_mask)
+    white_region = cv2.bitwise_and(mask, mask, mask=white_mask)
+
+    # Combine blue and white regions
+    blue_white_veil = cv2.add(blue_region, white_region)
+
+    # Calculate the ratio of bluewhiteveil pixels to the total lesion pixels
+    total_pixels = np.count_nonzero(mask)
+    bluewhiteveil_pixels = np.count_nonzero(blue_white_veil)
+    bluewhiteveil_ratio = bluewhiteveil_pixels / total_pixels if total_pixels > 0 else 0
+
+    return bluewhiteveil_ratio
+
 
