@@ -19,6 +19,9 @@ def extract_features(image_path, mask_path, img_name):
     #image = plt.imread(image_path)
     
     mask = Image.open(mask_path)
+
+    if np.array(mask).size == 0:
+        return None
     
     rgb_img = plt.imread(image_path)[:,:,:3]
     mask_rgb_img = plt.imread(mask_path)
@@ -208,7 +211,6 @@ def rgb_var(image, slic_segments):
 def detect_blue_white_veil(image, mask):
     # Convert image and mask to HSV color space
     image_hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-    mask_hsv = cv2.cvtColor(mask, cv2.COLOR_BGR2HSV)
 
     # Define lower and upper bounds for blue and white colors in HSV
     lower_blue = np.array([90, 50, 50])
